@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/amortization-calculator/static/css/main.110e8821.css",
-    "main.js": "/amortization-calculator/static/js/main.a3377acd.js",
+    "main.js": "/amortization-calculator/static/js/main.a1aa351c.js",
     "static/js/453.1d99024d.chunk.js": "/amortization-calculator/static/js/453.1d99024d.chunk.js",
     "index.html": "/amortization-calculator/index.html",
     "main.110e8821.css.map": "/amortization-calculator/static/css/main.110e8821.css.map",
-    "main.a3377acd.js.map": "/amortization-calculator/static/js/main.a3377acd.js.map",
+    "main.a1aa351c.js.map": "/amortization-calculator/static/js/main.a1aa351c.js.map",
     "453.1d99024d.chunk.js.map": "/amortization-calculator/static/js/453.1d99024d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.110e8821.css",
-    "static/js/main.a3377acd.js"
+    "static/js/main.a1aa351c.js"
   ]
 }
