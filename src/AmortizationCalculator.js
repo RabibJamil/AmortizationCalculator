@@ -76,6 +76,9 @@ const AmortizationCalculator = () => {
 
         setSchedule(amortizationSchedule);
 
+        // Set viewport scale for zoom out
+    document.querySelector("meta[name='viewport']").setAttribute("content", "width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no");
+
         // Scroll to the table after a short delay
         setTimeout(() => {
             if (tableRef.current) {
