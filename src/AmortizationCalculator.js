@@ -9,6 +9,8 @@ const AmortizationCalculator = () => {
     const [extraPrincipal, setExtraPrincipal] = useState('');
     const [schedule, setSchedule] = useState([]);
     const [calculatedPayment, setCalculatedPayment] = useState('');
+    const [showSchedule, setShowSchedule] = useState(false); // Track if the schedule should be shown
+    const tableRef = useRef(null); // Create a ref for the table
 
     // Function to calculate the monthly mortgage payment
     const calculateMonthlyPayment = () => {
@@ -31,7 +33,7 @@ const AmortizationCalculator = () => {
     }, [currentBalance, interestRate, termYears]);
 
     
-    const tableRef = useRef(null); // Create a ref for the table
+    
 
     const calculateAmortization = (e) => {
         e.preventDefault();
@@ -152,7 +154,7 @@ const AmortizationCalculator = () => {
                     ref={tableRef} // Attach the ref
                 >
                     <h2>Amortization Schedule</h2>
-                    <table>
+                    <table style={{ width: '100%', tableLayout: 'fixed' }}>
                         <thead>
                             <tr>
                                 <th>Year</th>
