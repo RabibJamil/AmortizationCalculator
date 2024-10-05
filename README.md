@@ -21,7 +21,7 @@ A simple and interactive Amortization Calculator built with React. This applicat
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/your-username/amortization-calculator.git
+   git clone https://github.com/RabibJamil/AmortizationCalculator.git
 2. Navigate to the project directory:
    cd amortization-calculator
 3. Install dependencies:
