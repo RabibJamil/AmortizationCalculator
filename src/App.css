@@ -105,7 +105,8 @@ tr:nth-child(even) {
 }
 
 :focus {
-  outline: 2px solid #007bff; /* Change the color as needed */
+  /* outline: 2px solid #007bff; Change the color as needed */
+    /* box-shadow: 0 0 0 2px rgba(114, 124, 135, 0.5); Add a subtle custom focus style */
 }
 
 /* Fullscreen effect */
