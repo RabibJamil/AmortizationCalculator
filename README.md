@@ -37,7 +37,7 @@ Click the Calculate button to generate the amortization schedule.
 Screenshots
 
 Deployment
-This project is deployed on GitHub Pages (or any other platform you choose). You can access it live at the link above.
+This project is deployed on GitHub Pages (or any other platform you choose). You can access it live at [link.](https://rabibjamil.github.io/AmortizationCalculator/)
 
 Contributing
 Contributions are welcome! If you have suggestions for improvements or features, feel free to fork the repository and submit a pull request.
