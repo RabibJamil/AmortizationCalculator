@@ -2,7 +2,7 @@
   "name": "amortization-calculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RabibJamil.github.io/amortization-calculator",
+  "homepage": "https://rabibjamil.github.io/AmortizationCalculator/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
