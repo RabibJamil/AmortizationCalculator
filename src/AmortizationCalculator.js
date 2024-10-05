@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const AmortizationCalculator = () => {
@@ -29,6 +29,9 @@ const AmortizationCalculator = () => {
     useEffect(() => {
         calculateMonthlyPayment();
     }, [currentBalance, interestRate, termYears]);
+
+    
+    const tableRef = useRef(null); // Create a ref for the table
 
     const calculateAmortization = (e) => {
         e.preventDefault();
@@ -70,6 +73,14 @@ const AmortizationCalculator = () => {
         }
 
         setSchedule(amortizationSchedule);
+
+        // Scroll to the table after a short delay
+        setTimeout(() => {
+            if (tableRef.current) {
+                tableRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                tableRef.current.focus(); // Set focus on the table
+            }
+        }, 100); // Slight delay to ensure the schedule has rendered
     };
 
     return (
@@ -137,6 +148,8 @@ const AmortizationCalculator = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
+                    tabIndex={-1} // Makes the div focusable
+                    ref={tableRef} // Attach the ref
                 >
                     <h2>Amortization Schedule</h2>
                     <table>
